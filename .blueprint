@@ -1,0 +1,9 @@
+created:
+    - database/factories/SettingFactory.php
+    - database/migrations/2021_12_06_161746_create_settings_table.php
+    - app/Models/Setting.php
+    - database/seeders/SettingSeeder.php
+    - database/seeders/Seeder.php
+models:
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, two_factor_secret: 'text nullable', two_factor_recovery_codes: 'text nullable', remember_token: 'string:100 nullable', current_team_id: 'biginteger unsigned nullable', profile_photo_path: 'string:2048 nullable' }
+    Setting: { title: 'string:400', description: 'longtext nullable', image: 'binary nullable', status: 'enum:PUBLISHED, DRAFT', date: date, timestamps: timestamps, softdeletes: softDeletes }

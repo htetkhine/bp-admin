@@ -1,0 +1,11 @@
+models:
+  Setting:
+    title: string:400
+    description: longtext nullable
+    image: binary nullable
+    status: enum:PUBLISHED, DRAFT
+    date: date
+    timestamps: true
+    softDeletes: true
+
+seeders: Setting,
